@@ -10,19 +10,13 @@ import awsconfig from "../../aws-exports";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 import ForgotPassword from "./ForgotPassword";
+import VerifyContact from "./VerifyContact";
+import ConfirmSignIn from "./ConfirmSignIn";
+import ConfirmSignUp from "./ConfirmSignUp";
+import RequireNewPassword from "./RequireNewPassword";
 
 Amplify.configure(awsconfig);
 Analytics.configure({ disabled: true });
-
-// 1. signIn
-// 2. signUp
-// 3. Confirm code
-// 4. Change password
-// 5. Forgot password
-// 6. New password
-// 7. verify email add
-// 8. get current user
-// 9. get current session
 
 const Manual = () => (
   <div>
@@ -31,6 +25,10 @@ const Manual = () => (
       <SignIn />
       <SignUp />
       <ForgotPassword />
+      <VerifyContact />
+      <ConfirmSignIn />
+      <ConfirmSignUp />
+      <RequireNewPassword />
     </Authenticator>
   </div>
 );

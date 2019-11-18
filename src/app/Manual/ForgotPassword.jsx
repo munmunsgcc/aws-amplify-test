@@ -60,8 +60,8 @@ export default class CustomForgotPassword extends ForgotPassword {
     // code AND the new password.
     // 3. Click on Submit.
     return (
-      <div>
-        <div>Reset your password here</div>
+      <section>
+        <h3>Reset your password here</h3>
         <div>
           <div>
             {codeReceived === true
@@ -92,7 +92,7 @@ export default class CustomForgotPassword extends ForgotPassword {
             </div>
           )}
         </div>
-      </div>
+      </section>
     );
   }
 }

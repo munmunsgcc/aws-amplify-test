@@ -245,8 +245,8 @@ export default class CustomSignUp extends SignUp {
 
   showComponent() {
     return (
-      <div>
-        <label>Sign Up</label>
+      <section>
+        <h3>Sign Up</h3>
         <div>
           {this.signUpFields.map(
             ({ label, required, type, key, placeholder }) => {
@@ -305,7 +305,7 @@ export default class CustomSignUp extends SignUp {
             Sign In
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

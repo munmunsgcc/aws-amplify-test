@@ -8,7 +8,7 @@ export default class CustomSignIn extends SignIn {
 
   showComponent() {
     return (
-      <div>
+      <section>
         <form onSubmit={this.signIn}>
           <div>
             <label>Username</label>
@@ -51,7 +51,7 @@ export default class CustomSignIn extends SignIn {
           </div>
           <button type="submit">Login</button>
         </form>
-      </div>
+      </section>
     );
   }
 }
